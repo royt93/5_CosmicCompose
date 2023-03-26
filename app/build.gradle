@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        debug {
-            storeFile file('/Users/piyushpratheep/StudioProjects/SolarSystemApp/solar_system_app.jks')
-            storePassword 'solar_system_app'
-            keyAlias 'solar_system_app'
-            keyPassword 'solar_system_app'
-        }
-    }
+//    signingConfigs {
+//        debug {
+//            storeFile file('/Users/piyushpratheep/StudioProjects/SolarSystemApp/solar_system_app.jks')
+//            storePassword 'solar_system_app'
+//            keyAlias 'solar_system_app'
+//            keyPassword 'solar_system_app'
+//        }
+//    }
     compileSdk 31
 
     defaultConfig {
@@ -31,7 +31,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.debug
+//            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
